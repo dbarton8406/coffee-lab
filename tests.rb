@@ -23,7 +23,7 @@ class CaffeineTest < MiniTest::Test
 
     sherri.buy tsmf
     sherri.drink!
-    assert_within_epsilon sherri.alertness, 0.33, 0.1
+    assert_in_epsilon sherri.alertness, 0.33, 0.1
     refute tsmf.full?
     refute tsmf.empty?
   end
